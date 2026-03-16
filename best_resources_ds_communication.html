@@ -1,0 +1,135 @@
+
+<style>
+.sec-head { font-size:13px; font-weight:500; color:var(--color-text-secondary); margin:1.6rem 0 0.6rem; letter-spacing:0.04em; text-transform:uppercase; }
+.card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:10px; margin-bottom:0.5rem; }
+.rcard { background:var(--color-background-secondary); border:0.5px solid var(--color-border-secondary); border-radius:10px; padding:12px 14px; cursor:pointer; transition:border-color 0.15s; }
+.rcard:hover { border-color:var(--color-border-primary); }
+.rcard-top { display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+.badge { font-size:11px; font-weight:500; padding:2px 8px; border-radius:4px; white-space:nowrap; }
+.free  { background:#085041; color:#9FE1CB; }
+.paid  { background:#633806; color:#FAC775; }
+.free-p{ background:#26215C; color:#CECBF6; }
+.rcard-title { font-size:14px; font-weight:500; color:var(--color-text-primary); }
+.rcard-sub   { font-size:12px; color:var(--color-text-secondary); line-height:1.5; }
+.tip { background:#04342C; border:0.5px solid #085041; border-radius:8px; padding:10px 14px; margin:10px 0 0; }
+.tip p { font-size:12px; color:#5DCAA5; margin:0; line-height:1.6; }
+.tip strong { color:#9FE1CB; }
+</style>
+
+<p class="sec-head">Python · Pandas · NumPy — finish the foundation</p>
+<div class="card-grid">
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@campusx-official')">
+    <div class="rcard-top"><span class="badge free">FREE</span><span class="badge free-p">Hindi</span></div>
+    <div class="rcard-title">CampusX — Nitish Singh</div>
+    <div class="rcard-sub">Best Hindi DS/ML channel. Full Python, Pandas, ML playlists. Extremely concept-focused, not just code.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@krishnaik06')">
+    <div class="rcard-top"><span class="badge free">FREE</span><span class="badge free-p">Hindi/Eng</span></div>
+    <div class="rcard-title">Krish Naik</div>
+    <div class="rcard-sub">End-to-end ML/DL projects, deployment tutorials. Great for seeing how real projects are built and deployed.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@coreyms')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">Corey Schafer</div>
+    <div class="rcard-sub">The cleanest Python tutorials on YouTube. Every concept explained with perfect clarity. Start here for Python depth.</div>
+  </div>
+</div>
+
+<p class="sec-head">Math · Statistics · ML Concepts — the non-replaceable layer</p>
+<div class="card-grid">
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@3blue1brown')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">3Blue1Brown</div>
+    <div class="rcard-sub">Visual explanations of linear algebra, calculus, neural networks. Builds real intuition — not memorisation. Watch before any ML course.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@statquest')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">StatQuest — Josh Starmer</div>
+    <div class="rcard-sub">Statistics and ML concepts explained slowly and visually. Best resource in the world for understanding WHY algorithms work.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.coursera.org/specializations/machine-learning-introduction')">
+    <div class="rcard-top"><span class="badge free-p">FREE AUDIT</span></div>
+    <div class="rcard-title">Andrew Ng — ML Specialization</div>
+    <div class="rcard-sub">Coursera. The gold standard ML course. Audit for free. Deep concept clarity on regression, neural nets, decision trees. Do this in Year 3.</div>
+  </div>
+</div>
+
+<p class="sec-head">Deep Learning · LLMs · GenAI — future-proof skills</p>
+<div class="card-grid">
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@AndrejKarpathy')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">Andrej Karpathy</div>
+    <div class="rcard-sub">Ex-Tesla AI director. Builds GPT from scratch on video. Hardest but most rewarding channel — watch after Andrew Ng.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.deeplearning.ai/short-courses/')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">DeepLearning.AI Short Courses</div>
+    <div class="rcard-sub">LangChain, RAG, prompt engineering, fine-tuning LLMs. Each course is 1–2 hours. Best GenAI practical courses available right now.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.fast.ai')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">fast.ai — Practical Deep Learning</div>
+    <div class="rcard-sub">Top-down approach — build first, understand later. Great complement to Andrew Ng. Real projects from lesson 1.</div>
+  </div>
+</div>
+
+<p class="sec-head">SQL — asked in every data job interview</p>
+<div class="card-grid">
+  <div class="rcard" onclick="openLink('https://mode.com/sql-tutorial/')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">Mode SQL Tutorial</div>
+    <div class="rcard-sub">Best structured SQL learning path. Runs queries in browser, no setup. Covers beginner to advanced analytical SQL.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://leetcode.com/studyplan/top-sql-50/')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">LeetCode — Top SQL 50</div>
+    <div class="rcard-sub">50 SQL problems that cover 90% of interview questions. Solve these and you're interview-ready for any data role.</div>
+  </div>
+</div>
+
+<p class="sec-head">Practice · Portfolio — what gets you hired</p>
+<div class="card-grid">
+  <div class="rcard" onclick="openLink('https://www.kaggle.com/learn')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">Kaggle Learn + Competitions</div>
+    <div class="rcard-sub">Free micro-courses + real competitions. Every notebook you submit is portfolio-ready. Start with Titanic competition.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://github.com/')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">GitHub — your public resume</div>
+    <div class="rcard-sub">Push every project here. A good GitHub profile gets you shortlisted before your resume is even read. Commit daily.</div>
+  </div>
+</div>
+
+<p class="sec-head">Communication — the most underrated skill in tech</p>
+<div class="card-grid">
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@JordanHarbinger')">
+    <div class="rcard-top"><span class="badge free">FREE</span><span class="badge free-p">PODCAST</span></div>
+    <div class="rcard-title">Jordan Harbinger Show</div>
+    <div class="rcard-sub">Social skills, networking, persuasion. Listen while commuting. Practical communication tactics used by top professionals.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@TED')">
+    <div class="rcard-top"><span class="badge free">FREE</span><span class="badge free-p">VIDEO</span></div>
+    <div class="rcard-title">TED Talks — daily habit</div>
+    <div class="rcard-sub">Watch 1 TED talk per day. Study how speakers structure ideas, use pauses, and explain complex things simply. Mirror their style.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.toastmasters.org/')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">Toastmasters Club</div>
+    <div class="rcard-sub">Find a local or online chapter. Practice public speaking in a safe group. Most underused free resource by Indian tech students.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@BBCLearningEnglish')">
+    <div class="rcard-top"><span class="badge free">FREE</span><span class="badge free-p">AUDIO+VIDEO</span></div>
+    <div class="rcard-title">BBC Learning English</div>
+    <div class="rcard-sub">Professional English, pronunciation, business vocabulary. Short daily episodes. Consistent listening builds fluency fast.</div>
+  </div>
+  <div class="rcard" onclick="openLink('https://www.youtube.com/@AbroadinJapan')">
+    <div class="rcard-top"><span class="badge free">FREE</span></div>
+    <div class="rcard-title">Speak English With Vanessa</div>
+    <div class="rcard-sub">Natural English conversation patterns, confidence building. Great for reducing hesitation and thinking in English, not translating.</div>
+  </div>
+</div>
+
+<div class="tip">
+  <p><strong>Daily habit that changes everything:</strong> 30 min concept video (3Blue1Brown / StatQuest) + 20 min English podcast while eating or commuting + 1 LeetCode SQL or 1 Kaggle notebook per week. This single routine, done consistently for 12 months, puts you ahead of 90% of your batch.</p>
+</div>

@@ -1,0 +1,370 @@
+
+<style>
+.month-card{border-radius:10px;padding:14px 16px;margin-bottom:10px;border:0.5px solid}
+.month-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.month-title{font-size:15px;font-weight:500}
+.month-tag{font-size:11px;font-weight:500;padding:3px 10px;border-radius:4px;white-space:nowrap}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.split-box{border-radius:8px;padding:10px 12px}
+.split-label{font-size:11px;font-weight:500;margin-bottom:4px;letter-spacing:0.03em}
+.split-item{font-size:12px;line-height:1.8}
+.res-label{font-size:10px;font-weight:500;margin-top:8px;margin-bottom:2px;letter-spacing:0.04em}
+.res-link{font-size:11px;line-height:1.9;text-decoration:underline;cursor:pointer;display:block}
+.goal-box{border-radius:8px;padding:8px 12px;margin-top:10px;font-size:12px;font-weight:500}
+.phase-banner{border-radius:8px;padding:9px 14px;margin:14px 0 8px;font-size:13px;font-weight:500;text-align:center}
+.divider{height:0.5px;background:var(--color-border-tertiary);margin:16px 0}
+.final{background:#04342C;border:0.5px solid #085041;border-radius:10px;padding:14px 16px;margin-top:4px}
+.final-title{font-size:15px;font-weight:500;color:#9FE1CB;margin-bottom:10px}
+.final-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.final-cell{background:#085041;border-radius:8px;padding:10px 12px}
+.final-cell-title{font-size:12px;font-weight:500;color:#9FE1CB;margin-bottom:4px}
+.final-cell-body{font-size:11px;color:#5DCAA5;line-height:1.8}
+.tip-strip{background:#26215C;border:0.5px solid #3C3489;border-radius:8px;padding:10px 14px;margin-top:10px;font-size:12px;color:#AFA9EC;line-height:1.6}
+.tip-strip strong{color:#CECBF6}
+</style>
+
+<!-- PHASE 1 -->
+<div class="phase-banner" style="background:#04342C;color:#9FE1CB">Phase 1 — Python Foundation (Months 1–2) · Do NOT skip or rush this</div>
+
+<!-- MONTH 1 -->
+<div class="month-card" style="background:#085041;border-color:#04342C">
+  <div class="month-head">
+    <span class="month-title" style="color:#9FE1CB">Month 1 — Python Absolute Basics</span>
+    <span class="month-tag" style="background:#04342C;color:#5DCAA5">Apr 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#04342C">
+      <div class="split-label" style="color:#5DCAA5">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#9FE1CB">Variables, data types, operators<br>if/else, for/while loops<br>Functions — define and call<br>Lists, tuples, dicts, sets<br>String methods, basic I/O</div>
+      <div class="res-label" style="color:#5DCAA5">Resources</div>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://cs50.harvard.edu/python/2022/')">CS50P Harvard — free, builds real thinking (best for beginners)</span>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — Python basics playlist (Hindi, concept-first)</span>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://www.youtube.com/@coreyms')">Corey Schafer — Python beginner series (English)</span>
+    </div>
+    <div class="split-box" style="background:#04342C">
+      <div class="split-label" style="color:#5DCAA5">0.5 HR — Practice</div>
+      <div class="split-item" style="color:#9FE1CB">2 problems every day<br>Write code by hand first<br>Never copy-paste — always type</div>
+      <div class="res-label" style="color:#5DCAA5">Platforms</div>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://www.hackerrank.com/domains/python')">HackerRank Python — beginner track</span>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://replit.com/')">Replit — code in browser, zero setup</span>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://www.w3schools.com/python/exercise.asp')">W3Schools Python exercises</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#04342C;color:#5DCAA5">Goal: Build a calculator, number guessing game, and simple to-do list using only core Python.</div>
+</div>
+
+<!-- MONTH 2 -->
+<div class="month-card" style="background:#0F6E56;border-color:#085041">
+  <div class="month-head">
+    <span class="month-title" style="color:#9FE1CB">Month 2 — Python Intermediate + OOP</span>
+    <span class="month-tag" style="background:#085041;color:#5DCAA5">May 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#085041">
+      <div class="split-label" style="color:#5DCAA5">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#9FE1CB">File handling — read/write CSV<br>Exception handling — try/except<br>OOP: classes, objects, methods<br>List comprehensions, lambda<br>Modules: os, math, random</div>
+      <div class="res-label" style="color:#5DCAA5">Resources</div>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://www.youtube.com/@coreyms')">Corey Schafer — OOP Python series (clearest)</span>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — Python intermediate playlist</span>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://docs.python.org/3/tutorial/')">Python official docs — read alongside</span>
+    </div>
+    <div class="split-box" style="background:#085041">
+      <div class="split-label" style="color:#5DCAA5">0.5 HR — Build</div>
+      <div class="split-item" style="color:#9FE1CB">Student marks tracker (CSV + OOP)<br>Simple contact book app<br>3 LeetCode Easy problems/week</div>
+      <div class="res-label" style="color:#5DCAA5">Practice</div>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://www.hackerrank.com/domains/python')">HackerRank — intermediate challenges</span>
+      <span class="res-link" style="color:#9FE1CB" onclick="openLink('https://leetcode.com/problemset/?difficulty=EASY')">LeetCode Easy — start now</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#085041;color:#5DCAA5">Goal: CSV-based grade analyser using classes and file handling. Python now feels natural to write.</div>
+</div>
+
+<!-- PHASE 2 -->
+<div class="phase-banner" style="background:#1a1640;color:#CECBF6">Phase 2 — Data Science Core (Months 3–5) · This is where DS actually begins</div>
+
+<!-- MONTH 3 -->
+<div class="month-card" style="background:#26215C;border-color:#3C3489">
+  <div class="month-head">
+    <span class="month-title" style="color:#CECBF6">Month 3 — NumPy + Pandas Basics</span>
+    <span class="month-tag" style="background:#3C3489;color:#AFA9EC">Jun 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#1a1640">
+      <div class="split-label" style="color:#AFA9EC">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#CECBF6">NumPy: arrays, shapes, slicing<br>Array math, broadcasting<br>Pandas: Series, DataFrame<br>Read CSV, head, info, describe<br>Filter, sort, select columns</div>
+      <div class="res-label" style="color:#AFA9EC">Resources</div>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — NumPy + Pandas playlist (Hindi, best)</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/watch?v=vmEHCJofslg')">Keith Galli — Pandas complete guide</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/watch?v=QUT1VHiLmmI')">freeCodeCamp — NumPy full tutorial</span>
+    </div>
+    <div class="split-box" style="background:#1a1640">
+      <div class="split-label" style="color:#AFA9EC">0.5 HR — Practice</div>
+      <div class="split-item" style="color:#CECBF6">Load a real dataset every day<br>Run describe, value_counts<br>Filter rows by conditions<br>Add new calculated columns</div>
+      <div class="res-label" style="color:#AFA9EC">Datasets</div>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.kaggle.com/datasets')">Kaggle Datasets — pick topic you like</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://pandas.pydata.org/docs/user_guide/index.html')">Pandas official docs — use as reference</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#1a1640;color:#AFA9EC">Goal: Load any CSV, clean it, filter it, and answer 5 data questions using Pandas confidently.</div>
+</div>
+
+<!-- MONTH 4 -->
+<div class="month-card" style="background:#3C3489;border-color:#26215C">
+  <div class="month-head">
+    <span class="month-title" style="color:#CECBF6">Month 4 — Pandas Deep + Visualization + SQL</span>
+    <span class="month-tag" style="background:#26215C;color:#AFA9EC">Jul 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#26215C">
+      <div class="split-label" style="color:#AFA9EC">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#CECBF6">Pandas: groupby, merge, pivot<br>Handle nulls, apply, lambda<br>Matplotlib: line, bar, scatter, pie<br>Seaborn: heatmap, pairplot, boxplot<br>SQL: SELECT, WHERE, JOIN, GROUP BY</div>
+      <div class="res-label" style="color:#AFA9EC">Resources</div>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — Pandas advanced + SQL</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/@coreyms')">Corey Schafer — Matplotlib deep dive</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://mode.com/sql-tutorial/')">Mode SQL Tutorial — runs in browser</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://leetcode.com/studyplan/top-sql-50/')">LeetCode Top SQL 50 — interview-ready</span>
+    </div>
+    <div class="split-box" style="background:#26215C">
+      <div class="split-label" style="color:#AFA9EC">0.5 HR — First GitHub Project</div>
+      <div class="split-item" style="color:#CECBF6">Full EDA: IPL / Zomato / movies<br>5 charts + 5 insights<br>Push to GitHub with README<br>This is your first portfolio piece</div>
+      <div class="res-label" style="color:#AFA9EC">Setup</div>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/watch?v=RGOj5yH7evk')">Git + GitHub crash course — freeCodeCamp</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://github.com/')">Create GitHub account — do this today</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#1a1640;color:#AFA9EC">Goal: First EDA project live on GitHub. Can write GROUP BY + JOIN SQL queries without help.</div>
+</div>
+
+<!-- MONTH 5 -->
+<div class="month-card" style="background:#633806;border-color:#412402">
+  <div class="month-head">
+    <span class="month-title" style="color:#FAC775">Month 5 — Math + Statistics for ML</span>
+    <span class="month-tag" style="background:#412402;color:#EF9F27">Aug 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#412402">
+      <div class="split-label" style="color:#EF9F27">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#FAC775">Linear algebra: vectors, matrices<br>Dot product, matrix multiply<br>Stats: mean, std dev, variance<br>Probability, normal distribution<br>Hypothesis testing, p-value</div>
+      <div class="res-label" style="color:#EF9F27">Deep concept resources</div>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab')">3Blue1Brown — Essence of Linear Algebra (must-watch)</span>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.youtube.com/@statquest')">StatQuest — Statistics + Probability playlist</span>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.khanacademy.org/math/statistics-probability')">Khan Academy — Statistics (free, beginner-friendly)</span>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — Math for ML playlist</span>
+    </div>
+    <div class="split-box" style="background:#412402">
+      <div class="split-label" style="color:#EF9F27">0.5 HR — Apply</div>
+      <div class="split-item" style="color:#FAC775">Add statistical analysis to EDA<br>Calculate distributions in Pandas<br>Explain each concept aloud after watching — no notes</div>
+      <div class="res-label" style="color:#EF9F27">Supplementary</div>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr')">3Blue1Brown — Essence of Calculus</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#2d1a00;color:#EF9F27">Goal: Understand WHY stats matters in ML. Explain normal distribution and variance clearly without notes.</div>
+</div>
+
+<!-- PHASE 3 -->
+<div class="phase-banner" style="background:#412402;color:#FAC775">Phase 3 — Machine Learning (Months 6–9) · Concepts before code, always</div>
+
+<!-- MONTH 6 -->
+<div class="month-card" style="background:#712B13;border-color:#4A1B0C">
+  <div class="month-head">
+    <span class="month-title" style="color:#F5C4B3">Month 6 — ML Basics + First Model</span>
+    <span class="month-tag" style="background:#4A1B0C;color:#F0997B">Sep 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#4A1B0C">
+      <div class="split-label" style="color:#F0997B">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#F5C4B3">What is ML — types and use cases<br>Linear Regression — concept + math<br>Logistic Regression — classification<br>Train/test split, overfitting concept<br>scikit-learn: fit, predict, score</div>
+      <div class="res-label" style="color:#F0997B">Resources</div>
+      <span class="res-link" style="color:#F5C4B3" onclick="openLink('https://www.coursera.org/specializations/machine-learning-introduction')">Andrew Ng ML Specialization — audit free (gold standard)</span>
+      <span class="res-link" style="color:#F5C4B3" onclick="openLink('https://www.youtube.com/@statquest')">StatQuest — Linear + Logistic Regression (visual clarity)</span>
+      <span class="res-link" style="color:#F5C4B3" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — ML beginner playlist (Hindi)</span>
+    </div>
+    <div class="split-box" style="background:#4A1B0C">
+      <div class="split-label" style="color:#F0997B">0.5 HR — Kaggle</div>
+      <div class="split-item" style="color:#F5C4B3">Titanic competition — first submit<br>Study 3 top public notebooks<br>Run your own model on it</div>
+      <div class="res-label" style="color:#F0997B">Resources</div>
+      <span class="res-link" style="color:#F5C4B3" onclick="openLink('https://www.kaggle.com/competitions/titanic')">Kaggle Titanic — perfect first competition</span>
+      <span class="res-link" style="color:#F5C4B3" onclick="openLink('https://scikit-learn.org/stable/user_guide.html')">scikit-learn docs — read alongside coding</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#2d0d05;color:#F0997B">Goal: First ML model built. Titanic submitted on Kaggle. Understands overfitting and why it happens.</div>
+</div>
+
+<!-- MONTH 7 -->
+<div class="month-card" style="background:#633806;border-color:#412402">
+  <div class="month-head">
+    <span class="month-title" style="color:#FAC775">Month 7 — Tree Models + Feature Engineering</span>
+    <span class="month-tag" style="background:#412402;color:#EF9F27">Oct 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#412402">
+      <div class="split-label" style="color:#EF9F27">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#FAC775">Decision Trees — entropy, gini index<br>Random Forest — bagging concept<br>XGBoost — gradient boosting idea<br>Feature engineering: encode, scale<br>Cross-validation, confusion matrix</div>
+      <div class="res-label" style="color:#EF9F27">Resources</div>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.youtube.com/@statquest')">StatQuest — Decision Tree + Random Forest (visual, essential)</span>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — Tree models + feature engineering</span>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.coursera.org/specializations/machine-learning-introduction')">Andrew Ng — continue Week 3–4</span>
+    </div>
+    <div class="split-box" style="background:#412402">
+      <div class="split-label" style="color:#EF9F27">0.5 HR — Project</div>
+      <div class="split-item" style="color:#FAC775">House price prediction project<br>Compare 3 models: LR, Tree, RF<br>Push to GitHub with full README</div>
+      <div class="res-label" style="color:#EF9F27">Practice</div>
+      <span class="res-link" style="color:#FAC775" onclick="openLink('https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques')">Kaggle House Prices — 2nd competition</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#2d1a00;color:#EF9F27">Goal: 2nd GitHub ML project. Can explain WHY Random Forest beats a single Decision Tree.</div>
+</div>
+
+<!-- MONTH 8 -->
+<div class="month-card" style="background:#3C3489;border-color:#26215C">
+  <div class="month-head">
+    <span class="month-title" style="color:#CECBF6">Month 8 — Model Evaluation + Unsupervised ML</span>
+    <span class="month-tag" style="background:#26215C;color:#AFA9EC">Nov 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#26215C">
+      <div class="split-label" style="color:#AFA9EC">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#CECBF6">Precision, recall, F1, ROC-AUC<br>Hyperparameter tuning — GridSearch<br>K-Means clustering concept<br>PCA — dimensionality reduction<br>Bias-variance tradeoff deep dive</div>
+      <div class="res-label" style="color:#AFA9EC">Resources</div>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/@statquest')">StatQuest — ROC, AUC, K-Means, PCA playlists</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — Model evaluation + clustering</span>
+    </div>
+    <div class="split-box" style="background:#26215C">
+      <div class="split-label" style="color:#AFA9EC">0.5 HR — Apply</div>
+      <div class="split-item" style="color:#CECBF6">Add proper evaluation to old projects<br>Customer segmentation with K-Means<br>2 more LeetCode SQL problems/week</div>
+      <div class="res-label" style="color:#AFA9EC">Practice</div>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.kaggle.com/learn/intro-to-machine-learning')">Kaggle Learn — ML micro-courses (free)</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#1a1640;color:#AFA9EC">Goal: Can evaluate any ML model properly. Understands what F1 score and AUC actually mean.</div>
+</div>
+
+<!-- MONTH 9 -->
+<div class="month-card" style="background:#26215C;border-color:#3C3489">
+  <div class="month-head">
+    <span class="month-title" style="color:#CECBF6">Month 9 — Deep Learning Introduction</span>
+    <span class="month-tag" style="background:#3C3489;color:#AFA9EC">Dec 2026</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#1a1640">
+      <div class="split-label" style="color:#AFA9EC">1.5 HRS — Learn</div>
+      <div class="split-item" style="color:#CECBF6">What is a neural network — intuition<br>Layers, weights, activation functions<br>Forward pass + backpropagation WHY<br>TensorFlow/Keras basics<br>Build first neural net on MNIST</div>
+      <div class="res-label" style="color:#AFA9EC">Resources</div>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi')">3Blue1Brown — Neural Networks series (must-watch first)</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.fast.ai')">fast.ai — Practical Deep Learning (free, project-first)</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — Deep Learning playlist</span>
+    </div>
+    <div class="split-box" style="background:#1a1640">
+      <div class="split-label" style="color:#AFA9EC">0.5 HR — Build</div>
+      <div class="split-item" style="color:#CECBF6">Image classifier with Keras<br>MNIST digit recognition project<br>Push to GitHub as 3rd project</div>
+      <div class="res-label" style="color:#AFA9EC">Resources</div>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.tensorflow.org/tutorials')">TensorFlow official tutorials — free</span>
+      <span class="res-link" style="color:#CECBF6" onclick="openLink('https://www.kaggle.com/competitions/digit-recognizer')">Kaggle Digit Recognizer — 3rd competition</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#1a1640;color:#AFA9EC">Goal: Built a working neural network. Understands what backpropagation does — not just how to run it.</div>
+</div>
+
+<!-- PHASE 4 -->
+<div class="phase-banner" style="background:#042C53;color:#B5D4F4">Phase 4 — Portfolio + Internship Ready (Months 10–12)</div>
+
+<!-- MONTH 10 -->
+<div class="month-card" style="background:#0C447C;border-color:#042C53">
+  <div class="month-head">
+    <span class="month-title" style="color:#B5D4F4">Month 10 — End-to-End ML Project</span>
+    <span class="month-tag" style="background:#042C53;color:#85B7EB">Jan 2027</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#042C53">
+      <div class="split-label" style="color:#85B7EB">1.5 HRS — Build Big Project</div>
+      <div class="split-item" style="color:#B5D4F4">Choose a real-world problem<br>Full pipeline: data → clean → EDA<br>→ feature eng → model → evaluate<br>Compare 3+ models, pick best<br>Write detailed GitHub README</div>
+      <div class="res-label" style="color:#85B7EB">Project ideas + guidance</div>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://www.youtube.com/@krishnaik06')">Krish Naik — end-to-end project walkthroughs</span>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://www.youtube.com/@campusx-official')">CampusX — capstone project guidance</span>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://www.kaggle.com/code')">Study top Kaggle notebooks for structure</span>
+    </div>
+    <div class="split-box" style="background:#042C53">
+      <div class="split-label" style="color:#85B7EB">0.5 HR — Interview Prep Starts</div>
+      <div class="split-item" style="color:#B5D4F4">Top 50 DS interview questions<br>Statistics questions — practice daily<br>SQL interview questions — 3/day</div>
+      <div class="res-label" style="color:#85B7EB">Resources</div>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://www.interviewbit.com/data-science-interview-questions/')">InterviewBit — DS interview questions</span>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://leetcode.com/studyplan/top-sql-50/')">LeetCode SQL 50 — finish remaining</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#042C53;color:#85B7EB">Goal: Best project on GitHub — the one you lead every interview with. Polished, detailed, impressive.</div>
+</div>
+
+<!-- MONTH 11 -->
+<div class="month-card" style="background:#185FA5;border-color:#0C447C">
+  <div class="month-head">
+    <span class="month-title" style="color:#B5D4F4">Month 11 — Polish Portfolio + Deep Interview Prep</span>
+    <span class="month-tag" style="background:#0C447C;color:#85B7EB">Feb 2027</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#0C447C">
+      <div class="split-label" style="color:#85B7EB">1 HR — Portfolio Polish</div>
+      <div class="split-item" style="color:#B5D4F4">Clean up all GitHub repos<br>Write bio + pinned projects<br>LinkedIn: headline, about, projects<br>Add GitHub link everywhere<br>4th Kaggle competition — submit</div>
+      <div class="res-label" style="color:#85B7EB">Resources</div>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://towardsdatascience.com/')">Towards Data Science — read daily, stay sharp</span>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://www.youtube.com/@AndrejKarpathy')">Andrej Karpathy — start for depth (ex-Tesla AI)</span>
+    </div>
+    <div class="split-box" style="background:#0C447C">
+      <div class="split-label" style="color:#85B7EB">1 HR — Interview Prep</div>
+      <div class="split-item" style="color:#B5D4F4">Mock technical interviews daily<br>Explain every project clearly<br>20 easy LeetCode Python problems<br>Stats + ML concept questions</div>
+      <div class="res-label" style="color:#85B7EB">Resources</div>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://www.pramp.com/')">Pramp — free peer mock interviews</span>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://leetcode.com/problemset/?difficulty=EASY')">LeetCode Easy — 20 Python problems</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#042C53;color:#85B7EB">Goal: GitHub looks professional. Can explain any project confidently. Interview-ready technically.</div>
+</div>
+
+<!-- MONTH 12 -->
+<div class="month-card" style="background:#0C447C;border-color:#042C53">
+  <div class="month-head">
+    <span class="month-title" style="color:#B5D4F4">Month 12 — Apply Aggressively</span>
+    <span class="month-tag" style="background:#042C53;color:#85B7EB">Mar 2027</span>
+  </div>
+  <div class="split">
+    <div class="split-box" style="background:#042C53">
+      <div class="split-label" style="color:#85B7EB">1.5 HRS — Applications</div>
+      <div class="split-item" style="color:#B5D4F4">Apply 5 internships every day<br>Internshala, LinkedIn, Unstop<br>Cold email to startups directly<br>Follow up after 1 week</div>
+      <div class="res-label" style="color:#85B7EB">Platforms</div>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://internshala.com/')">Internshala — data science filter</span>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://unstop.com/')">Unstop — competitions + internships</span>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://www.linkedin.com/jobs/')">LinkedIn Jobs — data analyst intern India</span>
+    </div>
+    <div class="split-box" style="background:#042C53">
+      <div class="split-label" style="color:#85B7EB">0.5 HR — Keep Growing</div>
+      <div class="split-item" style="color:#B5D4F4">1 Kaggle notebook/week<br>Read 1 ML article daily<br>GenAI intro — DeepLearning.AI short courses</div>
+      <div class="res-label" style="color:#85B7EB">Resources</div>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://www.deeplearning.ai/short-courses/')">DeepLearning.AI — free GenAI short courses</span>
+      <span class="res-link" style="color:#B5D4F4" onclick="openLink('https://towardsdatascience.com/')">Towards Data Science — daily reading habit</span>
+    </div>
+  </div>
+  <div class="goal-box" style="background:#042C53;color:#85B7EB">Goal: At least 1 internship interview cracked. Stipend target ₹10,000–25,000/month.</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="final">
+  <div class="final-title">After 12 months — what your friend will have built</div>
+  <div class="final-row">
+    <div class="final-cell">
+      <div class="final-cell-title">Skills</div>
+      <div class="final-cell-body">Python (strong)<br>NumPy + Pandas<br>SQL (interview-ready)<br>Matplotlib + Seaborn<br>scikit-learn + Keras<br>Statistics + Math<br>Deep Learning basics</div>
+    </div>
+    <div class="final-cell">
+      <div class="final-cell-title">Portfolio</div>
+      <div class="final-cell-body">3–4 GitHub projects<br>1 end-to-end ML project<br>2–3 Kaggle submissions<br>Clean LinkedIn profile<br>Professional README files</div>
+    </div>
+    <div class="final-cell">
+      <div class="final-cell-title">Target roles</div>
+      <div class="final-cell-body">Data Analyst intern<br>Junior ML Engineer<br>Data Science intern<br>Stipend: ₹10k–25k/mo<br>Job by final year: ₹5–8 LPA</div>
+    </div>
+  </div>
+</div>
+
+<div class="tip-strip">
+  <strong>The one rule that matters most:</strong> Never move to the next month until the current month's goal is achieved. The roadmap is a guide — mastery is the real milestone. A solid Month 1 makes every other month faster.
+</div>
